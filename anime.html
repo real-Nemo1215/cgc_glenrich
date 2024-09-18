@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Anime</title>
+    </head>
+
+    <body style='background-color:#000;'>
+        <header>
+            <div>
+                <button onclick="location.href='index.html'" style='background-color:#eec4dc'>
+                    BACK TO THE FRONT PAGE
+                </button>
+            </div>
+            <div>
+                <img src='https://wallpapers-clan.com/wp-content/uploads/2024/03/nezuko-glowing-eyes-demon-slayer-gif-desktop-wallpaper-preview.gif'>
+            </div>
+        </header>
+
+        <main>
+            <h1 id="anime_text">
+                ANIME
+            </h1>
+            <div>
+                <h3 id="anime_text" class="box2" style="height: 100px;">
+                    DO YOU LIKE ANIME
+                </h3>
+            </div>
+            <div class="box2" id="button_h" style="height: 100px;">
+                <button id="yesButton">
+                    YES
+                </button>
+                <button id="noButton">
+                    NO
+                </button>
+            </div>
+
+            <div id="additionalContent" class="hidden">
+
+                <div>
+                    <h2 id='anime_text'>
+                        What is anime?
+                    </h2>
+                </div>
+                <div>
+                    <p id='anime_text' style='font-size:20px;'>
+                        Anime is a style of animation from Japan known for its colorful art, unique character designs,
+                        and wide range of genres. It includes TV shows, movies, and original videos, often adapted from
+                        Japanese comics called manga. Anime features diverse stories, from action and romance to fantasy
+                        and sci-fi, appealing to various age groups and tastes. Popular examples include "Naruto," "One Piece,"
+                            and Studio Ghibli films like "Spirited Away." Its distinctive style and storytelling have gained a global fanbase.
+                    </p>
+                </div>
+                <div>
+                    <h2 id='anime_text'>
+                        Some Good Anime
+                    </h2>
+                </div>
+                <div class='box2'>
+
+                    <button onclick="location.href='https://hianime.to/watch/boruto-naruto-next-generations-8143?ep=47085'" style=' color:#ed92fd;font-size:40px; font-weight:bold;background-image: url("https://gifdb.com/images/high/naruto-background-498-x-213-gif-in48dw03al55h0le.gif"); background-size: cover; background-position: center;'>
+                        NARUTO
+                    </button>
+
+                    <button onclick="location.href='https://hianime.to/watch/demon-slayer-kimetsu-no-yaiba-47?ep=1279'" style=' color:#ed92fd;font-size:40px; font-weight:bold;background-image: url("https://i.makeagif.com/media/1-22-2023/3eUm0d.gif"); background-size: cover; background-position: center;'>
+                        DEMON SLAYER
+                    </button>
+
+                    <button onclick="location.href='https://hianime.to/watch/violet-evergarden-59?ep=1451'" style=' color:#ed92fd;font-size:40px; font-weight:bold;background-image: url("https://i.pinimg.com/originals/9c/ee/52/9cee52bff22769822c3df4cf36a4686e.gif"); background-size: cover; background-position: center;'>
+                        VIOLET EVERGARDEN
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <script>
+            document.getElementById('yesButton').addEventListener('click', function() {
+                document.getElementById('additionalContent').classList.remove('hidden');
+                document.getElementById('anime_text').innerHTML = 'Enjoy the rest of the site!';
+                document.querySelector('.box2').classList.add('hidden');
+                document.getElementById('button_h').classList.add('hidden');
+            });
+
+            document.getElementById('noButton').addEventListener('click', function() {
+                window.location.href = 'index.html';
+                alert('Only if you like anime come back to the page!')
+            });
+
+        </script>
+    </body>
+</html>
